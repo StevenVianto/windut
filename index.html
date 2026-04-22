@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">WebsiteSaya</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang!</h1>
+            <p>Ini adalah website sederhana yang dibuat dengan HTML, CSS, dan JavaScript</p>
+            <button class="btn" onclick="scrollTo('#layanan')">Pelajari Lebih Lanjut</button>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami menyediakan solusi web yang sederhana namun powerful untuk kebutuhan Anda. Dengan desain yang modern dan responsif, website kami dapat diakses dari berbagai perangkat.</p>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎨 Desain Web</h3>
+                    <p>Desain web modern dan menarik yang sesuai dengan identitas brand Anda</p>
+                </div>
+                <div class="service-card">
+                    <h3>⚡ Performa Tinggi</h3>
+                    <p>Website yang cepat dan responsif di semua perangkat</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔒 Aman</h3>
+                    <p>Keamanan terjamin dengan teknologi terkini</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Website Sederhana. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
