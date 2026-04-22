@@ -48,3 +48,14 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
+
+// Portfolio filter animation
+document.querySelectorAll('.portfolio-item').forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.05)';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+    });
+});
